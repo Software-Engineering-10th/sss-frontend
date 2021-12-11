@@ -32,6 +32,8 @@ const Recommend = styled.div`
 const ReportBox = styled.div`
     margin-left: 630px;
     cursor: pointer;
+
+    margin-left: ${ props => props.ml };
 `;
 
 const Detail = (props) => {
@@ -62,13 +64,17 @@ const Detail = (props) => {
                 <ReportBox onClick={ ()=>{ setReportModal(true) }}>
                     <Text size='12px'>게시글 신고하기</Text>
                 </ReportBox>
+
+                <ReportBox ml='630px'>
+                <Text size='12px'>삭제하기</Text>
+                </ReportBox>
             </Box>
             <Box width='800px' top='30px' pt='10px' pb='10px'><Row>
                 <div><CommentInput placeholder='댓글'></CommentInput></div>
                 <Submitbutton ml='40px' type="submit" value={"댓글 작성"}></Submitbutton>
             </Row></Box>
             <Box width='700px' top='20px' pt='20px' pb='20px'>
-                <Text size='15px'>댓글들</Text>
+                <Text size='15px'><Text size='18px'>랄랄라:</Text> 저용</Text>
             </Box>
         </Container>
         <Footer />

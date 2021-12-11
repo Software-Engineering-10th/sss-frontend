@@ -15,8 +15,8 @@ const Mypage = (props) => {
         <>
             <Container>
                 <Box width='1000px'>
-                    <Subtitle>닉네임</Subtitle>
-                    <Text size='15px' >( 신뢰 점수 )</Text>
+                    <Subtitle>왓챠러</Subtitle>
+                    <Text size='15px' >안녕하세요!</Text>
                 </Box>
             </Container>
             <PostContainer>
